@@ -1,0 +1,714 @@
+/*禁止手机端点击时出现灰色背景*/
+*{
+		 -webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight-color: transparent; tap-highlight-color:rgba(0,0,0,0); tap-highlight-color:transparent;
+	}
+/*砸金蛋活动页样式*/
+.dn{
+  display: none;
+}
+.warpBody,.warpBody1{
+  position: relative;
+  margin:0 auto;
+  width: 6.4rem;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+}
+.warpBody{
+  background-color: #f2e2d7;
+  background-image: url('images/shengdan/bjt.png');
+  background-repeat: no-repeat;
+  background-size:6.4rem auto;
+}
+.xuehuaDiv{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.xuehuaIcon{
+  position: absolute;
+}
+@-webkit-keyframes xuehua {
+  0% {
+    -webkit-transform: rotate(0deg);
+		transform: rotate(0deg);
+		top: -2rem;
+		opacity: 1;
+  }
+	75% {
+    -webkit-transform: rotate(360deg);;
+    transform: rotate(360deg);
+		top: 7rem;
+		opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);;
+    transform: rotate(360deg);
+		top: 10rem;
+		opacity: 0;
+  }
+}
+
+.goldDiv{
+  position: absolute;
+  top: 0.15rem;
+  left: 0;
+  width: 1.55rem;
+  height: 0.6rem;
+  padding-top: 0.04rem;
+  background:url('images/shengdan/jinbibg.png');
+  background-size: 1.55rem 0.64rem;
+}
+.goldIcon{
+  margin-top: 0.12rem;
+  margin-left: 0.08rem;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+.goldNum{
+  margin-left: 0.1rem;
+  width: 0.64rem;
+  text-align: center;
+  font-size: 0.3rem;
+  color: #fff;
+  line-height: 0.64rem;
+}
+.hdgzBtn{
+  position: absolute;
+  top: 0;
+  right: 0.2rem;
+  padding:0 0.09rem;
+  width: 0.49rem;
+  height: 0.89rem;
+  background: #fbe36f;
+  color: #a56440;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.22rem;
+  font-style:italic;
+  line-height: 0.3rem;
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+.marginT5{
+  margin-top: 0.05rem;
+}
+.marginT12{
+	margin-top: 0.12rem;
+}
+.xiaIcon{
+  margin-top: 0.05rem;
+  margin-left: 0.23rem;
+  width: 0.14rem;
+  height: 0.08rem;
+  display: inline-block;
+}
+.titPic{
+  margin: 0.95rem auto 0;
+  width: 4.58rem;
+  height: 0.88rem;
+}
+.dateTip{
+  position: relative;
+  margin: -0.12rem auto 0;
+  width: 2.9rem;
+  height: 0.2rem;
+}
+.fgx1{
+  position: absolute;
+  top: 0.05rem;
+  width: 0.7;
+  height: 1px;
+  background: #dfc3b2;
+}
+.left0{
+	left: 0;
+}
+.right0{
+	right: 0;
+}
+.dateDiv{
+  position: relative;
+  left: 50%;
+  margin-left: -0.77rem;
+  width: 1.53rem;
+  height: 0.2rem;
+  /*background: #f9efe7;*/
+  line-height: 0.2rem;
+  font-size: 0.22rem;
+  color: #a56440;
+  font-style:italic;
+}
+.caidanWarpDiv{
+  position: relative;
+  margin: 0.05rem auto 0;
+  width: 5.94rem;
+  height: 6.5rem;
+  background: url('images/shengdan/shengdanTree.png');
+  background-size: 5.94rem 6.5rem;
+}
+.jiangpin{
+  position: absolute;
+}
+.jiangpin img{
+  width: 100%;
+  height: 100%;
+}
+.jiangpin0{
+  bottom: 1.52rem;
+  left: 1.18rem;
+  width: 0.84rem;
+  height: 1.07rem;
+}
+.jiangpin1{
+  bottom: 2.32rem;
+  left: 1.85rem;
+  width: 0.98rem;
+  height: 1.19rem;
+}
+.jiangpin2{
+  bottom: 2.05rem;
+  right: 1.91rem;
+  width: 0.91rem;
+  height: 1.12rem;
+}
+.jiangpin3{
+  bottom: 3.4rem;
+  right: 2rem;
+  width: 0.98rem;
+  height: 1.12rem;
+}
+.jiangpin4{
+  top: 2.02rem;
+  left: 1.82rem;
+  width: 0.98rem;
+  height: 1.24rem;
+}
+.jiangpin5{
+  top: 0.9rem;
+  left: 2.32rem;
+  width: 1.22rem;
+  height: 1.62rem;
+}
+.jiangpin6{
+  bottom: 1.37rem;
+  left: 2.32rem;
+  width: 1.01rem;
+  height: 1.45rem;
+}
+.jiangpin7{
+  bottom: 1.55rem;
+  right: 1.3rem;
+  width: 0.94rem;
+  height: 1.65rem;
+}
+
+.licjBtn{
+  position: absolute;
+  bottom: 0.18rem;
+  left: 50%;
+  margin-left: -1.96rem;
+  width: 3.85rem;
+  height: 0.98rem;
+}
+
+.zadanjihuiDiv{
+  width: 100%;
+  height: 0.6rem;
+  font-size: 0.24rem;
+  color: #b27651;
+  line-height: 0.3rem;
+  text-align: center;
+}
+.dadanNum{
+  display: inline-block;
+  padding:0 0.1rem;
+	font-size: 0.30rem;
+}
+.duihuanBtn{
+  display: inline-block;
+  padding-left: 0.1rem;
+  text-decoration: underline;
+}
+.zhongjiangbobaoWarp{
+  position: relative;
+  margin: 0.35rem auto;
+  width: 5.6rem;
+  height: 3.2rem;
+  border-radius: 13px;
+}
+.zhongjiangBg{
+  position: absolute;
+  top: -0.35rem;
+  left: -0.2rem;
+  width: 5.81rem;
+  height: 3.83rem;
+}
+.zhongjiangbobaoDiv{
+  margin: 0.25rem 0.1rem;
+  position: relative;
+  width: 5.4rem;
+  height: 2.9rem;
+  border-radius: 0.11rem;
+}
+
+.zhongjiangbobaoDiv header{
+  position: relative;
+  margin: 0.08rem auto 0;
+  width: 3.4rem;
+  height: 0.3rem;
+}
+.fgx{
+  position: absolute;
+  top: 0.15rem;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+	opacity: 0.5;
+}
+.bobaoTit{
+  position: relative;
+  margin:0 auto;
+  width: 1.4rem;
+  height: 0.3rem;
+  background: #e3b599;
+  text-align: center;
+  font-size: 0.3rem;
+  color:#fff;
+  line-height: 0.3rem;
+}
+.zhongjiangbobaoBanner{
+  position: relative;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.zhongjiangUl>li,.miandan{
+  height: 0.5rem;
+  padding: 0 0.2rem;
+  font-size: 0.24rem;
+  line-height: 0.5rem;
+  color: #fff;
+}
+.miandan{
+	position: relative;
+	margin-top: 0.15rem;
+  height: 0.63rem;
+  line-height: 0.63rem;
+  font-weight: bold;
+  background: #d29e80;
+}
+.zhongjiangPhone{
+	clear: both;
+}
+
+.shareBtn,.goJindan{
+  margin: 0.7rem auto 0;
+  width: 4.58rem;
+  height: 0.68rem;
+  background: #d29e80;
+  border-radius: 0.35rem;
+  font-size: 0.32rem;
+  color: #fff;
+  line-height: 0.68rem;
+}
+.BottmBtnDiv{
+  margin: 0.3rem auto 0.8rem;
+  width: 4.58rem;
+  height: 0.8rem;
+}
+.BottomBtn{
+  width: 1.99rem;
+  height: 0.53rem;
+  line-height: 0.53rem;
+  font-size: 0.3rem;
+  color: #d29e80;
+  border-radius: 0.27rem;
+  border:1px solid #d29e80;
+}
+
+/*分享页样式*/
+.marginT_25{
+  margin-top: -0.8rem!important;
+}
+.marginT20{
+  margin-top: 0.2rem!important;
+}
+.leftLogo{
+  position: absolute;
+  top: 0.2rem;
+  left: 0.15rem;
+  width: 1.39rem;
+  height: 0.45rem;
+}
+.xhTipsDiv{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0.6rem;
+	padding-top: 0.1rem;
+  font-size: 0.22rem;
+  line-height: 0.22rem;
+  color: #d29e80;
+  background: #f2e2d7;
+}
+.xhTipIcon{
+  width: 0.27rem;
+  height: 0.27rem;
+}
+.shareGiftfgx{
+  margin-top: 0.3rem;
+  width: 100%;
+  height: 0.25rem;
+  border-top: 1px dashed #e1bda7;
+}
+.shareGiftDiv{
+  margin: 0 auto 0.4rem;
+  width: 5.4rem;
+  border-radius: 0.1rem;
+  padding: 0.45rem 0.3rem;
+}
+.shareTips{
+  width: 5.7rem;
+	margin-left: -0.15rem;
+  text-align: center;
+  line-height: 0.3rem;
+  font-size: 0.24rem;
+  color: #b27651;
+}
+.userInforDiv,.userInforDiv{
+  width: 4.8rem;
+  height: 0.24rem;
+  padding: 0.23rem 0.2rem;
+  background: #fff;
+  border-radius: 7px;
+}
+.userPhone,.userYzm,.userMessageYzm{
+  width: 4.8rem;
+  height: 0.24rem;
+	padding: 0.02rem 0;
+  font-size: 0.24rem;
+  line-height: 0.24rem;
+  border: none;
+  outline: none;
+}
+
+.userInfoTips{
+  clear: both;
+  height: 0.35rem;
+  text-align: left;
+  font-size: 0.2rem;
+  color: #ff0000;
+  line-height: 0.35rem;
+}
+.userInfoTips span{
+  display: none;
+}
+.width265{
+  width: 2.65rem;
+}
+.yzmPic,.getMessageYzm{
+  margin-top: 0.01rem;
+  margin-left: 0.1rem;
+  width: 2.02rem;
+  height: 0.68rem;
+  border-radius: 5px;
+}
+.getMessageYzm{
+  font-size: 0.25rem;
+  color: #c65800;
+  line-height: 0.68rem;
+  background: #ffd800;
+}
+.submitBtn{
+  margin-top: 0.25rem;
+  width: 5.17rem;
+  height: 0.68rem;
+  font-size: 0.28rem;
+  line-height: 0.68rem;
+  color: #fff;
+  background: #d29e80;
+  border-radius: 0.37rem;
+}
+.disabled{
+  background: #ccc!important;
+  color: #fff;
+}
+.stErweima{
+  display: block;
+  margin: 0 auto;
+  width: 2.02rem;
+  height: 2.02rem;
+}
+.sbErwmTip1,.sfErwmTip2{
+  width: 100%;
+  margin-top: 0.1rem;
+  text-align: center;
+  font-size: 0.24rem;
+  line-height: 0.3rem;
+  color: #d29e80;
+}
+.sfErwmTip2{
+  margin-top: 0;
+  padding-bottom: 0.4rem;
+  font-size: 0.22rem;
+  color: #d29e80;
+  text-decoration: underline;
+}
+
+/*弹层部分*/
+.mc,.hdgzMc{
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  background: #130821;
+  opacity: 0.7;
+}
+.hdgzMc{
+	z-index: 200;
+}
+.hdgzTc{
+  display: none;
+  position: fixed;
+  top: 1.2rem;
+  left: 50%;
+  margin-left: -2.725rem;
+  width: 5.6rem;
+  height: 6.36rem;
+  z-index: 250;
+}
+.hdgzTopIcon1{
+	position: absolute;
+	top: -0.45rem;
+	left: 50%;
+	margin-left: -0.45rem;
+	width: 0.89rem;
+	height: 0.89rem;
+	z-index: 2;
+}
+.tcCloseBtn,.jingpinTcClose{
+  position: absolute;
+  top: -1.15rem;
+  right: -0.1rem;
+  width: 0.57rem;
+  height: 0.57rem;
+  z-index: 10;
+}
+.hdgzClose{
+	position: absolute;
+	bottom: -0.84rem;
+	left: 50%;
+	margin-left: -0.19rem;
+	width: 0.57rem;
+	height: 0.57rem;
+	z-index: 10;
+}
+.hdgzBg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5.6rem;
+  height: 6.36rem;
+  z-index: 1;
+}
+.hdgzHeader{
+  position: relative;
+  top: 0.4rem;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.28rem;
+  color: #a0592a;
+  border-radius:0.12rem 0.12rem 0 0;
+  z-index: 3;
+}
+.hdgzContent{
+  position: absolute;
+  top: 0.9rem;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 6.3rem;
+  overflow: hidden;
+  border-radius: 0 0 0.12rem 0.12rem;
+}
+.hdgzHideDiv{
+	margin: 0 0.2rem;
+  height: 5rem;
+  padding-bottom: 0.1rem;
+  overflow: hidden;
+}
+.hdgzUl{
+  height: 5rem;
+  padding: 0 0.2rem 0.2rem;
+  line-height: 0.3rem;
+  font-size: 0.23rem;
+  color: #a0592a;
+  text-align: left;
+  overflow: auto;
+}
+.hdgzTit{
+  padding-top: 0.1rem;
+  font-weight: bold;
+}
+
+.selfGetDiv,.againGetDiv,.getGiftDiv,.noJihuiDiv,.phoneErrorDiv,.duihuanJihuiDiv,.duihuanJihuiResultDiv,.duihuanFailDiv{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -1.05rem;
+  margin-left: -2.45rem;
+  width: 4.9rem;
+  height: 2.1rem;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 150;
+}
+
+.againGetDiv,.noJihuiDiv,.duihuanJihuiDiv,.duihuanJihuiResultDiv{
+  height: 2.5rem;
+  margin-top: -1.25rem;
+}
+.getGiftDiv{
+  height: 2.92rem;
+  margin-top: -1.45rem;
+}
+
+.selfTcClose{
+  right: -0.3rem;
+}
+.tcLogo{
+  position: absolute;
+  top: -0.43rem;
+  left: 50%;
+  margin-left: -0.43rem;
+  width: 0.86rem;
+  height: 0.86rem;
+}
+.tcTips1{
+  margin: 0.75rem 0 0;
+  width: 100%;
+  height: 0.24rem;
+  line-height: 0.24rem;
+  font-size: 0.24rem;
+  color: #666;
+}
+.tcTip2{
+  margin-top: 0.1rem;
+  font-size: 0.24rem;
+  color: #ff7744;
+}
+.marginT40{
+  margin-top: 0.4rem;
+}
+.marginT38{
+  margin-top: 0.38rem;
+}
+.colorff7744{
+  color: #ff7744!important;
+}
+.color666{
+  color: #666!important;
+}
+.tcKnoweBtn{
+  width: 100%;
+  height: 0.7rem;
+  font-size: 0.28rem;
+  color: #ff7744;
+  line-height: 0.7rem;
+  border-top: 1px solid #eee;
+  border-radius: 5px;
+}
+.tcContent{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.goChoujiang,.goJiangpin,.goDuihuan,.DuihuanConfirm1,.DuihuanResultConfirm1{
+  width: 2.44rem;
+  color: #ff7744;
+}
+.againCancel,.getGiftCancel,.noJihuiCancel,.cuihuanCancel,.duihuanResultCancel{
+  width: 2.44rem;
+  height: 100%;
+  color: #666;
+  border-right: 1px solid #eee;
+}
+.JingpinTc{
+	display: none;
+	position: fixed;
+	top: 0.5rem;
+	left: 50%;
+	z-index: 150;
+	margin-left: -2.65rem;
+	width: 5.3rem;
+}
+.jingpinTcClose{
+	right: -0.1rem;
+	top: 0.3rem;
+}
+.guangIcon{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 5.3rem;
+	height: 5.3rem;
+	animation: myfirst 10s linear infinite;
+	-webkit-animation: myfirst 10s linear infinite;	/* Safari 和 Chrome */
+}
+@-webkit-keyframes myfirst {
+    0% {
+      -webkit-transform: rotate(0deg);
+			transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);;
+      transform: rotate(360deg);
+    }
+  }
+.jiangpinPic{
+	position: absolute;
+	top: 0.8rem;
+	left: 50%;
+	margin-left: -2.1rem;
+	z-index: 3;
+	width: 4.2rem;
+	height: 3.35rem;
+}
+.JiangpinTxt{
+	position: relative;
+	margin-top: 4.4rem;
+	width: 4.28rem;
+	left: 50%;
+	margin-left: -2.14rem;
+	z-index: 10;
+}
+.zhongjiangTit1{
+	margin-bottom: 0.25rem;
+	height: 0.32rem;
+	line-height: 0.32rem;
+	font-size: 0.32rem;
+	color: #fff;
+}
+.jingpinName,.zhongjiangTit2 a{
+	color: #fbd733;
+}
+.zhongjiangTit2 a{
+	text-decoration: underline;
+}
+.zhongjiangTit2{
+	margin-bottom: 0.2rem;
+	font-size: 0.22rem;
+	line-height: 0.3rem;
+	color: #fff;
+}
